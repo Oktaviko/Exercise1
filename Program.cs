@@ -55,6 +55,31 @@ namespace Exercise1
         public void BubblesortArray()
         {
             //Pada pass i, bandingkan n-i elemen pertama dengan elemen selanjutnya
+            for (int j = 0; j < n - 1; j++)
+            {
+                if (a[j] > a[j + 1])//Jika elemen tidak dalam ururtan yang benar
+                {
+                    //Tukar elemen
+                    int temp;
+                    temp = a[j];
+                    a[j] = a[j + 1];
+                    a[j + 1] = temp;
+                }
+            }
+        }
+        static void Main(string[] args)
+        {
+            //Creating the object of the Bubblesort class
+            Program myList = new Program();
+            //Memanggil fungsi untuk menerima elemen array
+            myList.read();
+            //Memanggil fungsi untuk mengurutkan array
+            myList.BubblesortArray();
+            //Memanggil fungsi untuk menampilkan array yang tersusun
+            myList.display();
+            //Exit
+            Console.WriteLine("\n\nTekan tombol apa saja untuk keluar.");
+            Console.Read();
         }
     }
 }
