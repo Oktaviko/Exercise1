@@ -33,6 +33,28 @@ namespace Exercise1
             Console.WriteLine("-------------");
             //Pengguna memasukkan elemen pada array
             for (int i = 0; i < n; i++)
+            {
+                Console.Write("--" + (i + 1) + "--");
+                string s1 = Console.ReadLine();
+                a[i] = Int32.Parse(s1);
+            }
+        }
+        public void display()
+        {
+            //Menampilkan array yang tersusun
+            Console.WriteLine("");
+            Console.WriteLine("---------");
+            Console.WriteLine("Element array yang telah tersusun");
+            Console.WriteLine("---------");
+            for (int j = 0; j < n; j++)
+            {
+                Console.WriteLine(a[j]);
+            }
+            Console.WriteLine("");
+        }
+        public void BubblesortArray()
+        {
+            //Pada pass i, bandingkan n-i elemen pertama dengan elemen selanjutnya
         }
     }
 }
