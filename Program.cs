@@ -9,16 +9,17 @@ namespace Exercise1
     class program
     {
         // Deklarasi array int dengan ukuran 50
-        private int[] a = new int[50];
+        public int[] a = new int[50];
         // Deklarasi variabel int untuk menyimpan banyaknya data pada array
-        private int n;
-        //
-        string x; 
+        public int n;
+        //Deklarasi variabel string untuk menyimpan data pada array
+        public string x;
 
         public void name()
         {
             Console.Write("Masukkan nama anda : ");
             string x = Console.ReadLine();
+
         }
 
         //fungsi / method
